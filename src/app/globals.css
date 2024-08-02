@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Discord';
+  src: url('/fonts/helvetica-neue-5/HelveticaNeueLight.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+}
