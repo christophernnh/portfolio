@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
   return (
     <div
-      className="group flex flex-col bg-neutral-800 rounded-sm h-96 justify-center text-5xl cursor-pointer hover:"
+      className="mb-2 group flex flex-col bg-neutral-800 rounded-sm h-96 justify-center text-5xl cursor-pointer hover:"
       onClick={handleGitHubClick}
     >
       <div className="h-1/2 flex flex-col py-4 px-4">
