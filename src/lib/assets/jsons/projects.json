@@ -1,0 +1,51 @@
+[
+  {
+    "type": "Desktop Application",
+    "name": "Linkasa",
+    "technologies": ["RiNextjsLine", "IoLogoElectron", "RiFirebaseLine"],
+    "image": "/images/Mockup_Linkasa.png",
+    "repo": "https://github.com/christophernnh/Linkasa"
+  },
+  {
+    "type": "Web Application",
+    "name": "Travelohi",
+    "technologies": ["FaReact", "SiFlask", "SiPostgresql"],
+    "image": "/images/Mockup_Travelohi.png",
+    "repo": "https://github.com/christophernnh/Travelohi"
+  },
+  {
+    "type": "Mobile Application",
+    "name": "ConvHub",
+    "technologies": ["TbBrandKotlin", "RiFirebaseLine"],
+    "image": "/images/Mockup_Convhub.png",
+    "repo": "https://github.com/christophernnh/ConvHub"
+  },
+  {
+    "type": "Web Application",
+    "name": "Suara Bersih",
+    "technologies": ["FaReact", "SiFlask", "RiFirebaseLine"],
+    "image": "/images/Mockup_Suarabersih.png",
+    "repo": "https://github.com/christophernnh/suara-bersih"
+  },
+  {
+    "type": "Web Application",
+    "name": "Benefactor",
+    "technologies": ["FaReact"],
+    "image": "/images/Mockup_Benefactor.png",
+    "repo": "https://github.com/christophernnh/benefactor"
+  },
+  {
+    "type": "Game",
+    "name": "Tarzan",
+    "technologies": ["FaUnity"],
+    "image": "/images/Mockup_Tarzan.png",
+    "repo": ""
+  },
+  {
+    "type": "Game",
+    "name": "The Adventures of Patrick",
+    "technologies": ["FaUnity"],
+    "image": "/images/Mockup_Theadventures.png",
+    "repo": ""
+  }
+]

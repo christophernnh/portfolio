@@ -2,6 +2,7 @@
 import { CSSProperties, useEffect, useState } from "react";
 import JakartaClock from "./jakartaclock";
 import { GoCopy } from "react-icons/go";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsVisible(true);
+      handleScroll();
     }, 50);
 
     const handleScroll = () => {
@@ -30,14 +31,13 @@ const Navbar = () => {
   const navbarStyles: CSSProperties = {
     opacity: isVisible ? 1 : 0,
     visibility: isVisible ? "visible" : "hidden",
-    transition: "opacity 0.3s ease-in-out, visibility 0.3s ease-in-out",
+    transition: "opacity 0.3s ease-out, visibility 0.3s ease-in-out",
   };
 
   const handleCopy = () => {
     navigator.clipboard
       .writeText("hchrisnath@gmail.com")
       .then(() => {
-        console.log("Email copied to clipboard!");
         setIsToastVisible(true);
         setTimeout(() => {
           setIsToastVisible(false);
@@ -51,18 +51,20 @@ const Navbar = () => {
   return (
     <nav
       style={navbarStyles}
-      className="fixed flex flex-row min-w-full px-40 py-16 justify-between items-center text-lg"
+      className="fixed flex flex-row min-w-full md:px-40 px-4 md:py-16 py-4 justify-between md:text-lg"
     >
       <section className="font-bold w-1/3">CHRISTOPHER NATHAN</section>
-      <section className="w-1/3 flex justify-center">
+      <section className="md:flex hidden w-1/3  justify-center">
         <JakartaClock />
       </section>
-      <section className="w-1/3 flex justify-end">
+      <section className="flex w-1/3 justify-end">
         <button
           onClick={handleCopy}
-          className="text-sm bg-zinc-800 px-8 py-2 rounded-full flex items-center hover:bg-zinc-700"
+          className="text-3xl md:text-sm md:bg-zinc-800 md:px-8 px-4 md:py-2 py-1 rounded-full flex items-center hover:bg-zinc-700"
         >
-          hchrisnath@gmail.com &nbsp; <GoCopy />
+          <span className="hidden md:flex">hchrisnath@gmail.com &nbsp;</span>
+          <span className="md:flex hidden"><GoCopy /></span>
+          <span className="md:hidden"><MdOutlineMailOutline/></span>
         </button>
         {isToastVisible && (
           <div

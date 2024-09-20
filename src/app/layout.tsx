@@ -27,9 +27,9 @@ export default function RootLayout({
   };
   return (
     <html lang="en">
-      <body className={`font-satoshi bg-zinc-900 text-white`}>
+      <body className={`font-satoshi bg-zinc-900 text-white m-0 p-0`}>
         <Navbar />
-        <section style={layoutStyles} className="px-40 py-10">{children}</section>
+        <section style={layoutStyles} className="md:px-40 px-4 py-10">{children}</section>
       </body>
     </html>
   );
