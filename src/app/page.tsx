@@ -37,7 +37,7 @@ export default function Home() {
             <div className="min-h-14 md:text-4xl text-6xl pb-4 pt-20 md:pt-0 font-medium">
               <TypeWriterHeader />
             </div>
-            <div className="text-2xl md:text-lg md:pb-6 pb-44 flex flex-row flex-wrap">
+            <div className="text-2xl md:text-lg md:pb-6 pb-40 flex flex-row flex-wrap">
               <span className="text-gray-400">I love bringing</span>&nbsp;
               <span className="text-white">visionary</span>&nbsp;
               <span className="text-gray-400">ideas to life through</span>&nbsp;
